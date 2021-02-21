@@ -51,7 +51,10 @@ In this unit we'll take a look at a specific Webhook implementations [GitHub](ht
 ### Video 2 - Explore the Request
 
 * [Beeceptor](https://beeceptor.com)
-
+* [- Uomo]
+Using beeceptor lets u create a "moking" url for sending webhook post to it after creating an url with beeceptor (~for exemple: https://porva1.free.beeceptor.com) u can use it as an endpoint to handle the weebhook.
+In the course for testing it we go from github to settings>>Webhook and then create a new webhook, in the url space we use the beeceptor that we created and select an event: adding or remove a star from this repo.
+When we star this repo we should see a change at the url created with beeceptor
 #### 📚 Learn more
 * [🎮 TwilioQuest - The Flame of Open Source - Learn to use GitHub](https://www.twilio.com/quest/learn/open-source?utm_source=freecodecamp&utm_medium=github&utm_campaign=webhooks)
 
