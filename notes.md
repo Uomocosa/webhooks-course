@@ -76,6 +76,15 @@ When we star this repo we should see a change at the url created with beeceptor
 * [Install Visual Studio Code](https://code.visualstudio.com/download)
 * [Optional - Connect GitHub with ssh](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh)
 
+* [- Uomo]
+* How to copy and open any code from "GitHub" to "Visual Studio Core" using "Git":
+* 0. From GitHub go to "Code" and copy the url
+* 1. Open "Command Prompt"
+* 2. Go to the folder u want to open (~ ex.: C:\Users\Uomocosa\Code\Webhooks) using the command "cd" in the command prompt, it lets u open the folder
+*    (es.: starting from C:\Users\Uomocosa; type "cd Code" then enter, then "cd Webhooks")
+* 3. Type "git clone " and paste the URL copied from github then press Enter
+* 4. Type "code ." then press enter
+
 ### Video 5 - Opening a Tunnel
 
 #### Installations
