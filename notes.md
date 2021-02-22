@@ -80,10 +80,17 @@ When we star this repo we should see a change at the url created with beeceptor
 * How to copy and open any code from "GitHub" to "Visual Studio Core" using "Git":
 * 0. From GitHub go to "Code" and copy the url
 * 1. Open "Command Prompt"
-* 2. Go to the folder u want to open (~ ex.: C:\Users\Uomocosa\Code\Webhooks) using the command "cd" in the command prompt, it lets u open the folder
-*    (es.: starting from C:\Users\Uomocosa; type "cd Code" then enter, then "cd Webhooks")
+* 2. Go to the folder u want to open (~ ex.: C:\Users\Uomocosa\Code\Webhooks) using the command "cd" in the command prompt, it lets u open the folder (es.: starting from C:\Users\Uomocosa; type "cd Code" then enter, then "cd Webhooks")
 * 3. Type "git clone " and paste the URL copied from github then press Enter
 * 4. Type "code ." then press enter
+
+* [- Uomo]
+* How to start your local host
+* 1. In the command promt or the terminal on "Visual Studio Code" go to the folder u want to open in your local host (~es.: C:\Users\Uomocosa\Code\Webhooks\webhooks-course\code\express-discorder), u can move from folder to folder in the terminal using the "cd" command.
+* 2. type "npm install" then enter
+* 3. type "npm start" then enter
+* You have now created your local host at: http://localhost:3000
+* (N.B.: 3000 is the port of your local host)
 
 ### Video 5 - Opening a Tunnel
 
@@ -91,11 +98,16 @@ When we star this repo we should see a change at the url created with beeceptor
 
 * [Install ngrok](https://ngrok.com)
 * [Install ngrok to your path - Stack Overflow](https://stackoverflow.com/questions/30188582/ngrok-command-not-found)
-
-Install [nodemon](https://www.npmjs.com/package/nodemon):
+* [Install nodemon](https://www.npmjs.com/package/nodemon):
 
 ```bash
 npm install -g nodemon
+```
+* [- Uomo]
+* ngrok creates a tunnel form your local host to the internet allawing u to use the url given by ngrok as an endpoint for your webhook
+* for doing so u have to (after installing ngrok and opening you local host) type in your terminal:
+```bash
+ngrok http 3000
 ```
 
 #### 📚 Learn more
@@ -109,6 +121,17 @@ npm install -g nodemon
 ```bash
 npm install netlify-cli -g
 ```
+* [- Uomo]
+* netlify allows you to have a servless function for free (under certain parameters) it creates an endpoint (same as ngrok) but this time it actualy is on the internet, u might think it as a step above ngrok, with some differences.
+* To upload a serveless function from your pc:
+* 1. In the command promt or the terminal on "Visual Studio Code" go to the folder u want to open in your local host (~es.: C:\Users\Uomocosa\Code\Webhooks\webhooks-course\code\netlify-discorder), u can move from folder to folder in the terminal using the "cd" command.
+* 2. npm install
+* 2.5. if u are not logged in in netlify: netlify login
+* 3. netlify deploy --prod
+* 4. then select + Create & configure new site
+* 5. then select the team in wich u want to save the function
+* 6. then enter the name of the site u want to create
+* 7. then select the directory u want to publish (pressing enter selects the current directory)
 
 #### 📚 Learn more
 
